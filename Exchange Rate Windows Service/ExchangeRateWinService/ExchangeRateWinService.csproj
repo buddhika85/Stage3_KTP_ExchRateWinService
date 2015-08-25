@@ -42,12 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CSVReader.cs" />
+    <Compile Include="CustomTimer.cs" />
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="Emailer.cs" />
     <Compile Include="ExchangeRateWinService.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="ExchangeRateWinService.Designer.cs">
       <DependentUpon>ExchangeRateWinService.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExhchangeRateServiceConsumer.cs" />
+    <Compile Include="Logger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

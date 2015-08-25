@@ -11,6 +11,7 @@ namespace ExchangeRateWinService
     {
         /// <summary>
         /// The main entry point for the application.
+        /// Ref - 25/08/2015 - http://www.c-sharpcorner.com/UploadFile/naresh.avari/develop-and-install-a-windows-service-in-C-Sharp/
         /// </summary>
         static void Main()
         {

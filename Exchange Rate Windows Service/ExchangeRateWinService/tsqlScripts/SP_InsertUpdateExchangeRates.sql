@@ -10,13 +10,13 @@ GO
 -- ====================================================================================================================================================================================
 ALTER PROCEDURE SP_InserUpdateExchangeRates 
 	-- input/output params
-	@usd DECIMAL,
-	@euro DECIMAL,	
+	@usd DECIMAL(10,4),
+	@euro DECIMAL(10,4),	
 	@insertEditStatus VARCHAR(1000) OUTPUT
 AS
 BEGIN
 
-	SET @insertEditStatus = '';
+	--SET @insertEditStatus = '';
 	
 	-- checking whther we have a record for the current date
 	DECLARE @todaysRecord DATE = (SELECT [dateER] AS todaysRecord FROM [dbo].[TblExchangeRate] WHERE [dateER] = CONVERT(DATE, GETDATE()));	
@@ -27,15 +27,21 @@ BEGIN
 			[usdValue] = @usd, 
 			[euroValue] = @euro, 
 			[timeER] = CONVERT(TIME, GETDATE()) WHERE
-			[dateER] = CONVERT(DATE, GETDATE());
-		SET @insertEditStatus = 'UPDATED Exchange rates for ' + GETDATE();
+			[dateER] = CONVERT(DATE, GETDATE(), 101);
+		SET @insertEditStatus = 'UPDATED Exchange rates for ' + CONVERT(VARCHAR(500), GETDATE());
 	END
 	ELSE
 	BEGIN
 		-- insert
-		INSERT INTO [dbo].[TblExchangeRate] VALUES (CONVERT(DATE, GETDATE()), CONVERT(TIME, GETDATE()), @usd, @euro);
-		SET @insertEditStatus = 'INSERTED Exchange rates for ' + GETDATE();
+		INSERT INTO [dbo].[TblExchangeRate] VALUES (CONVERT(DATE, GETDATE(), 101), CONVERT(TIME, GETDATE()), @usd, @euro);
+		SET @insertEditStatus = 'INSERTED Exchange rates for ' + CONVERT(VARCHAR(500), GETDATE());
 	END
+
+
+	
+	--INSERT INTO [dbo].[TblExchangeRate] VALUES (CONVERT(DATE, GETDATE()), CONVERT(TIME, GETDATE()), 2.511, 1.511);
+	--SELECT * FROM [TblExchangeRate]
+	--TRUNCATE TABLE [TblExchangeRate]
 
 END 
 GO

@@ -4,8 +4,8 @@ CREATE TABLE TblExchangeRate(
 
 	dateER DATE PRIMARY KEY NOT NULL,
 	timeER TIME NOT NULL,
-	usdValue DECIMAL NOT NULL,
-	euroValue DECIMAL NOT NULL
+	usdValue DECIMAL(10,4) NOT NULL,
+	euroValue DECIMAL(10,4) NOT NULL
 );
 
 SELECT * FROM TblExchangeRate;

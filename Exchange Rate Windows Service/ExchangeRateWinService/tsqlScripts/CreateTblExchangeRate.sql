@@ -1,0 +1,11 @@
+USE [BCMY_Stock];
+
+CREATE TABLE TblExchangeRate(
+
+	dateER DATE PRIMARY KEY NOT NULL,
+	timeER TIME NOT NULL,
+	usdValue DECIMAL NOT NULL,
+	euroValue DECIMAL NOT NULL
+);
+
+SELECT * FROM TblExchangeRate;

@@ -75,6 +75,7 @@
     <Content Include="obj\Debug\ExchangeRateWinService.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\ExchangeRateWinService.exe" />
     <Content Include="obj\Debug\ExchangeRateWinService.pdb" />
+    <Content Include="tsqlScripts\CreateTblExchangeRate.sql" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />

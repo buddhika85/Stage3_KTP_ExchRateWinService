@@ -1,1 +1,2 @@
 usd,euro,refreshRate,logFileLocationName,email,databaseserverIP,dbServerUsername,dbServerPassword,dbName
+http://www.webservicex.net/CurrencyConvertor.asmx/ConversionRate?FromCurrency=GBP&ToCurrency=USD, http://www.webservicex.net/CurrencyConvertor.asmx/ConversionRate?FromCurrency=GBP&ToCurrency=EUR,

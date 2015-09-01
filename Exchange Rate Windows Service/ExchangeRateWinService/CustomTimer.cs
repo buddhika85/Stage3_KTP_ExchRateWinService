@@ -33,7 +33,9 @@ namespace ExchangeRateWinService
                 //aTimer = new System.Timers.Timer(2000); 
 
                 // Create a timer with a two second interval.
-                aTimer = new System.Timers.Timer(10000);
+                int intervalInMinutes = CSVReader.ConfigCsv.TimerRefreshRate;
+                int intervalInMillSecs = intervalInMinutes * 60 * 1000;
+                aTimer = new System.Timers.Timer(intervalInMillSecs);
 
                 // Hook up the Elapsed event for the timer. 
                 aTimer.Elapsed += OnTimedEvent;

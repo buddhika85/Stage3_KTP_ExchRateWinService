@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CsvModel.cs" />
     <Compile Include="CSVReader.cs" />
     <Compile Include="CustomTimer.cs" />
     <Compile Include="DataAccess.cs" />

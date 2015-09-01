@@ -19,10 +19,32 @@ namespace ExchangeRateWinService
 
         protected override void OnStart(string[] args)
         {
+            try
+            {
+                Logger.LogInfo("BCMY Exchange Rate Windows Service Started");
+                CSVReader.PrepareCsvProperties();
+                CustomTimer.ConsumeWebServiceRecurringly();
+            }
+            catch (Exception exc)
+            {
+                Logger.LogExceptions("Exception thrown to the top most caller - check the app code", exc);
+                //throw; // no where to throw from here
+            }          
         }
 
         protected override void OnStop()
         {
+            try
+            {
+                Logger.LogInfo("BCMY Exchange Rate Windows Service Stopped");
+                CustomTimer.StopRecurringConsumption();
+            }
+            catch (Exception exc)
+            {
+                Logger.LogExceptions("Exception thrown to the top most caller - check the app code", exc);
+                //throw; // no where to throw from here
+            }     
         }
+
     }
 }

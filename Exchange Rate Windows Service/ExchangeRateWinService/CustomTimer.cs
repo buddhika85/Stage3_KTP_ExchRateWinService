@@ -58,6 +58,30 @@ namespace ExchangeRateWinService
             }
         }
 
+        /// <summary>
+        /// Used to stop the windows service
+        /// </summary>
+        internal static void StopRecurringConsumption()
+        {
+            try
+            {
+                if (aTimer != null)
+                {
+                    // Have the timer stop firing repeated events (true is the default)
+                    aTimer.AutoReset = false;
+
+                    // Stop the timer
+                    aTimer.Enabled = false;
+                }
+                Logger.LogDebug(string.Format("Windows service stopped successfully ", DateTime.Now));
+            }
+            catch (Exception exc)
+            {
+                Logger.LogExceptions("Exception - Stopping - Recurring consumption of the extrenal service failed", exc);
+                throw;
+            }
+        }
+
 
         // <summary>
         /// Event raised from the Timer obj
@@ -97,5 +121,6 @@ namespace ExchangeRateWinService
                 Console.WriteLine("Time {0} - Exception thrown : {1} \n{2} \n{3}", e.SignalTime, exce.Message, exce.Source, exce.InnerException.Data);
             }
         }
+
     }
 }

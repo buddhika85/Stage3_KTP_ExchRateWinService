@@ -34,8 +34,8 @@ namespace ExchangeRateWinService
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
                     // add the input parameters to the command object
-                    cmd.Parameters.AddWithValue("@usd", 0.567891);
-                    cmd.Parameters.AddWithValue("@euro", 1.66999);
+                    cmd.Parameters.AddWithValue("@usd", usd);
+                    cmd.Parameters.AddWithValue("@euro", euro);
 
                     // add the output parameter to the command object
                     SqlParameter outPutParameter = new SqlParameter();

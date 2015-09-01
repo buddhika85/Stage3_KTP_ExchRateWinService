@@ -59,7 +59,6 @@
     <Compile Include="ExchangeRateWinService.Designer.cs">
       <DependentUpon>ExchangeRateWinService.cs</DependentUpon>
     </Compile>
-    <Compile Include="ExhchangeRateServiceConsumer.cs" />
     <Compile Include="ExternalServiceConsumer.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />

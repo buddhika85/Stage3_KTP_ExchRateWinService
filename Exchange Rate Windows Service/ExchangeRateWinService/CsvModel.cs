@@ -19,8 +19,11 @@ namespace ExchangeRateWinService
         [CsvColumn(Name = "refreshRate")]
         public int TimerRefreshRate { get; set; }
 
-        [CsvColumn(Name = "email")]
-        public string Email { get; set; }
+        [CsvColumn(Name = "senderEmail")]
+        public string SenderEmail { get; set; }
+
+        [CsvColumn(Name = "receiverEmail")]
+        public string ReceviverEmail { get; set; }
 
         [CsvColumn(Name = "databaseserverIP")]
         public string DbServerIp { get; set; }

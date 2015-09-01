@@ -5,8 +5,11 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 
+//Here is the once-per-application setup information
+[assembly: log4net.Config.XmlConfigurator(Watch = true)]
 namespace ExchangeRateWinService
 {
+
     static class Program
     {
         /// <summary>

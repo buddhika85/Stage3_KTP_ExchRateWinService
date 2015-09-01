@@ -88,6 +88,7 @@
     <Content Include="bin\Debug\ExchangeRateWinService.exe" />
     <Content Include="bin\Debug\ExchangeRateWinService.pdb" />
     <Content Include="bin\Debug\ExchangeRateWinService.vshost.exe" />
+    <Content Include="bin\Debug\mylogfile.txt" />
     <Content Include="obj\Debug\ExchangeRateWinService.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\ExchangeRateWinService.exe" />
     <Content Include="obj\Debug\ExchangeRateWinService.pdb" />

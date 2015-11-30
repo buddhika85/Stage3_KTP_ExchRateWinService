@@ -50,8 +50,7 @@ namespace ExchangeRateWinService
                 HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
                 HttpWebResponse response = (HttpWebResponse)request.GetResponse();
                 StreamReader resStream = new StreamReader(response.GetResponseStream());
-                XmlDocument doc = new XmlDocument();
-                result = resStream.ReadToEnd();
+                XmlDocument doc = new XmlDocument();               
                 euroExchange = Convert.ToDecimal(result);
                 Logger.LogInfo("Euro exchange rate received");
             }
@@ -98,8 +97,7 @@ namespace ExchangeRateWinService
             {
                 HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
                 HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-                StreamReader resStream = new StreamReader(response.GetResponseStream());
-                XmlDocument doc = new XmlDocument();
+                StreamReader resStream = new StreamReader(response.GetResponseStream());                
                 result = resStream.ReadToEnd();
                 usdExchange = Convert.ToDecimal(result);
                 Logger.LogInfo("USD exchange rate received");

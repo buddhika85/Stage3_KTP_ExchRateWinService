@@ -44,7 +44,7 @@ namespace ExchangeRateWinService
             decimal? euroExchange = null;
             // old - do not work - http://www.webservicex.net/CurrencyConvertor.asmx/ConversionRate?FromCurrency=GBP&ToCurrency=USD
             // new - works - "http://currencies.apps.grandtrunk.net/getlatest/gbp/usd";  // http://currencies.apps.grandtrunk.net/getlatest/gbp/eur 
-            string url = CSVReader.ConfigCsv.UsdUrl;
+            string url = CSVReader.ConfigCsv.EuroUrl;
             try
             {
                 HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);

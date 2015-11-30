@@ -4,8 +4,8 @@ E:\KTP Project\Dropbox\Stage 3 - Exchange Rate Windows Service\Exchange Rate Win
 E:\KTP Project\Dropbox\Stage 3 - Exchange Rate Windows Service\Exchange Rate Windows Service\ExchangeRateWinService\bin\Debug\LINQtoCSV.dll
 E:\KTP Project\Dropbox\Stage 3 - Exchange Rate Windows Service\Exchange Rate Windows Service\ExchangeRateWinService\bin\Debug\log4net.dll
 E:\KTP Project\Dropbox\Stage 3 - Exchange Rate Windows Service\Exchange Rate Windows Service\ExchangeRateWinService\bin\Debug\log4net.xml
+E:\KTP Project\Dropbox\Stage 3 - Exchange Rate Windows Service\Exchange Rate Windows Service\ExchangeRateWinService\obj\Debug\ExchangeRateWinService.csprojResolveAssemblyReference.cache
 E:\KTP Project\Dropbox\Stage 3 - Exchange Rate Windows Service\Exchange Rate Windows Service\ExchangeRateWinService\obj\Debug\ExchangeRateWinService.ProjectInstaller.resources
 E:\KTP Project\Dropbox\Stage 3 - Exchange Rate Windows Service\Exchange Rate Windows Service\ExchangeRateWinService\obj\Debug\ExchangeRateWinService.csproj.GenerateResource.Cache
 E:\KTP Project\Dropbox\Stage 3 - Exchange Rate Windows Service\Exchange Rate Windows Service\ExchangeRateWinService\obj\Debug\ExchangeRateWinService.exe
 E:\KTP Project\Dropbox\Stage 3 - Exchange Rate Windows Service\Exchange Rate Windows Service\ExchangeRateWinService\obj\Debug\ExchangeRateWinService.pdb
-E:\KTP Project\Dropbox\Stage 3 - Exchange Rate Windows Service\Exchange Rate Windows Service\ExchangeRateWinService\obj\Debug\ExchangeRateWinService.csprojResolveAssemblyReference.cache

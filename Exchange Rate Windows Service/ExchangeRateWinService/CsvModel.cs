@@ -39,5 +39,8 @@ namespace ExchangeRateWinService
 
         [CsvColumn(Name = "dbName")]
         public string DbName { get; set; }
+
+        [CsvColumn(Name = "senderEmailPassword")]
+        public string SenderEmailPassword { get; set; }
     }
 }

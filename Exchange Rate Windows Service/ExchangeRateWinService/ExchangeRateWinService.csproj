@@ -76,7 +76,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="bin\Debug\config.csv" />
     <None Include="bin\Debug\ExchangeRateWinService.exe.config" />
     <None Include="bin\Debug\ExchangeRateWinService.vshost.exe.config" />

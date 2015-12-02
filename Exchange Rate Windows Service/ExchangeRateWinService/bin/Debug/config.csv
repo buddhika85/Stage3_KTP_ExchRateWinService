@@ -1,2 +1,2 @@
-usd,euro,refreshRate,senderEmail,receiverEmail,databaseserverIP,port,dbServerUsername,dbServerPassword,dbName
-http://currencies.apps.grandtrunk.net/getlatest/gbp/usd,http://currencies.apps.grandtrunk.net/getlatest/gbp/eur,5,buddhika@bcmy.co.uk,buddhika@bcmy.co.uk,77.73.5.221,3306,sa,Ch0c0BunnyT@sty999,BCMY_Stock
+usd,euro,refreshRate,senderEmail,receiverEmail,databaseserverIP,port,dbServerUsername,dbServerPassword,dbName,SenderEmailPassword
+http://currencies.apps.grandtrunk.net/getlatest/gbp/usd,http://currencies.apps.grandtrunk.net/getlatest/gbp/eur,5,buddhika@bcmy.co.uk,buddhika@bcmy.co.uk,77.73.5.221,3306,sa,Ch0c0BunnyT@sty999,BCMY_Stock,test123$

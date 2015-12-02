@@ -24,6 +24,7 @@ namespace ExchangeRateWinService
                 Logger.LogInfo("BCMY Exchange Rate Windows Service Started");
                 CSVReader.PrepareCsvProperties();
                 CustomTimer.ConsumeWebServiceRecurringly();
+                new Emailer().InformViaEmail("BCMY Exchange Rate Windows Service Started", string.Format("BCMY Exchange Rate Windows Service Started at : {0}", DateTime.Now), null, null);
             }
             catch (Exception exc)
             {
@@ -38,6 +39,7 @@ namespace ExchangeRateWinService
             {
                 Logger.LogInfo("BCMY Exchange Rate Windows Service Stopped");
                 CustomTimer.StopRecurringConsumption();
+                new Emailer().InformViaEmail("BCMY Exchange Rate Windows Service Stopped", string.Format("BCMY Exchange Rate Windows Service Stopped at : {0}", DateTime.Now), null, null);
             }
             catch (Exception exc)
             {
